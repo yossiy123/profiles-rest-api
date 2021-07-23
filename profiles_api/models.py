@@ -45,7 +45,7 @@ class UserProfile (AbstractBaseUser, PermissionsMixin):
     # Make that field required by default
     USERNAME_FIELD = 'email'
     # The required fields
-    REQUIRED_FIELDS = []
+    REQUIRED_FIELDS = ['name']
 
     def get_full_name(self):
         """Retrieve full name of user"""
